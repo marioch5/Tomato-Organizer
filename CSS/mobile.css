@@ -1,0 +1,14 @@
+@media screen and (min-width: 992px){
+
+    /********* BUTONS *********/
+    .timer-select,
+    .action-select{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .button{
+        margin: 0;
+    }
+
+}

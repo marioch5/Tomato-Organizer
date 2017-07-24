@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/mobile.css">
+        <title>Tomato Organizer</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1 id="site-title">Tomato Organizer</h1>
+                <nav id="site-nav">
+                    <a class="nav-item" href="#">O que é?</a>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p class="modal-text">Tomato Organizer é um projeto de um site focado em orgnaização do se tempo no estilo da técnica do pomodoro.</p>
+                            <p class="modal-text">Nesta primeira versão disponibilzamos um timer no estilo pomodoro para que seja facil para você seguir a técnica.</p>
+                            <h3 class="modal-title">Mas afinal, o que é a técnica do Pomodoro?</h3>
+                            <p class="modal-text">Elaborada no fim da década de 1980, a técnica se baseia na ideia de que fluxos de trabalho divididos em blocos podem melhorar a agilidade do cérebro e estimular o foco. Depois de muita pesquisa, Cirillo chegou ao período de 25 minutos como sendo o tempo ideal para esses blocos, também conhecidos como “pomodoros”.</p>
+                            <p class="modal-text">A técnica funciona assim, então: </p>
+                            <ul>
+                                <li class="modal-text">Defina uma tarefa a ser feita</li>
+                                <li class="modal-text">Defina um timer para 25 minutos, isso será 1 pomodoro</li>
+                                <li class="modal-text">Trabalhe nesta tarefa sem interrupções</li>
+                                <li class="modal-text">Após o pomodoro descanse 5 minutos</li>
+                                <li class="modal-text">Após 4 pomodori seguidos descanse 30 minutos</li>
+                            </ul>
+                            <p class="modal-text">Ao final de cada tarefa é, muito importante, escrever quantos pomodori você demorou para terminá-la pois, assim, você poderá ver quanto tempo esta gastando em cada tarefa e poderá, também, casso a tarefa seja recorrente, inferir com precisão sua evolução em diminuir o tempo necessário para a conclusão.</p>
+                            <p class="modal-text">Na versão final do Tomato Organizer será possivel salvar suas taréfas no seu perfil, tornando-se assim na plataforma definitiva de produtividade para a técnica do pomodoro. Aguarde!</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div id="error-box">
+                    <h3 id="error-field">Espaço do Error</h3>
+                </div>
+
+                <form class="timer-select" action="index.html" method="post">
+                    <button class="button pomo" type="button" name="pomodoro">Pomodoro</button>
+                    <button class="button short" type="button" name="short-break">Pausa Curta</button>
+                    <button class="button long" type="button" name="long-break">Pausa Longa</button>
+                </form>
+
+                <div id="timer-display">
+
+                </div>
+
+                <form class="action-select" action="index.html" method="post">
+                    <button class="button start" type="button" name="start-timer">Começar</button>
+                    <button class="button pause" type="button" name="pause-timer">Pausar</button>
+                    <button class="button reset" type="button" name="reset-timer">Resetar</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+    <script src="Javascript/modal.js"></script>
+    <script src="Javascript/Notifications/notifications.js"></script>
+    <script src="Javascript/Error/ErrorHandler.js"></script>
+    <script src="Javascript/Timer/TimerController.js"></script>
+    <script src="Javascript/Timer/TimerView.js"></script>
+    <script src="App.js"></script>
+    <script src="Javascript/Events/Events.js"></script>
+
+</html>

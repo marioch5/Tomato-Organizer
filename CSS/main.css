@@ -1,0 +1,233 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+}
+
+/******************* HEADER *********************/
+
+/**** MODAL *****/
+/* The Modal (background) */
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+    transition: .5s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 2%;;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text{
+    font-family: 'Raleway', sans-serif;
+}
+
+.modal-title{
+    font-family: 'Dosis', sans-serif;
+}
+/***************************/
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+
+    /*justify-content: space-around;*/
+}
+
+.login-form input,
+.login-form button{
+    margin: 5%;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*background-color: #262626;*/
+    background-color: #bc2026;
+
+    height: 5em;
+
+}
+
+#site-title{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin: .5%;
+}
+
+#site-nav{
+    flex-basis: 25%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item{
+    text-decoration: none;
+
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+    transition: .2s;
+}
+
+/****************** MAIN ************************/
+main{
+    height: 80%;
+}
+
+.main-container{
+    padding: 5%;
+
+    /*background-color: lightgray;*/
+    /*border: 1px solid black;*/
+
+    /*margin-top: 3%;*/
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+/***** Taks ******/
+.task-selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+}
+
+.task-input{
+    width: 120%;
+
+    font-size: 1.5em;
+}
+
+.task-selector label{
+    font-size: 1.5em;
+    font-family: 'Droid Sans Mono', monospace;
+
+    padding-bottom: 5%;
+}
+
+/***** Error ******/
+#error-field{
+    user-select: none;
+    pointer-events: none;
+
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+/**** Timer ****/
+.timer-number{
+    font-size: 5em;
+    /*font-family: 'Archivo Black', sans-serif;*/
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+
+    margin-top: 30%;
+}
+
+
+/****** Buttons *****/
+
+.timer-select,
+.action-select{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.timer-select{
+    width: 90%;
+}
+
+.action-select{
+    width: 60%;
+}
+
+.button:focus{
+    outline: 0;
+}
+
+.button{
+    background-color: #e6e6e6;
+
+    border: 0;
+    cursor: pointer;
+    /*border-radius: 10%;*/
+
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    border-radius: 5%;
+
+    transition: .2s;
+
+    margin: 2%;
+}
+
+.button:hover{
+    background-color: #404040;
+    color: white;
+}
+
+.start:hover{
+    background-color: #00802b;
+}
+
+.pause:hover{
+    background-color: #b32400;
+}
+
+.reset:hover{
+    background-color: #00aaff;
+}
+
+
+.button:active{
+    transform: translateY(2px);
+}
