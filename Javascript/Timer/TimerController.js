@@ -23,7 +23,7 @@ class TimerController {
 
     logic(self){
         if(self.currentTime <= 0 && self.currentMinutes === 0){
-            self.chooseTimer();
+            self.finish();
             return;
         }
 
@@ -41,8 +41,6 @@ class TimerController {
         this.errorHandler.clearErrors();
 
         try {
-            // if(this.taksName.value === "" && this.isPomodoro) throw 'blank-task';
-
             if(this.isOn === true) throw 'timer-on';
 
             this.isOn = true;
@@ -67,7 +65,7 @@ class TimerController {
 
     finish(){
         notifyTimerEnd();
-        chooseTimer();
+        this.chooseNextTimer();
     }
 
     reset(){
@@ -89,7 +87,7 @@ class TimerController {
         this.timerView.render(this.currentTime, this.currentMinutes);
     }
 
-    chooseTimer(){
+    chooseNextTimer(){
         if(this.isPomodoro === true){
             this.isPomodoro = false;
             if(this.pomodoriCount === 3){
