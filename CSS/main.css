@@ -193,7 +193,7 @@ main{
 .button{
     background-color: #e6e6e6;
 
-    border: 0;
+    border: 1px solid #bfbfbf;
     cursor: pointer;
     /*border-radius: 10%;*/
 
@@ -203,7 +203,7 @@ main{
     padding-left: 5%;
     padding-right: 5%;
 
-    border-radius: 5%;
+/*     border-radius: 5%; */
 
     transition: .2s;
 
@@ -211,6 +211,7 @@ main{
 }
 
 .button:hover{
+    border-color: white;
     background-color: #404040;
     color: white;
 }
